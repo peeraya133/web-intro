@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image" href="img/logoIT.png">
+    <title>ระบบการจัดการโครงงาน - หน้าแรก</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&family=Athiti:wght@200;300;400;500;600;700&family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main-student">
+        <div class="menu">
+            <a href="home_user.html"><img src="img/head.png" width="100%" alt=""></a>
+            <a href="home_user.html" class="menu-option ">หน้าหลัก</a>
+            <a href="" class="menu-option menu-action">การจัดการโครงงาน</a>
+            <a href="" class="menu-option">รายงานความคืบหน้า</a>
+            <a href="" class="menu-option">ยื่นสอบ</a>
+            <a href="" class="menu-option">ผลการสอบ</a>
+            <a href="" class="menu-option">ข้อมูลผู้ใช้งาน</a>
+            <a style="color: rgb(182, 2, 2);" href="login.html" class="menu-option">ออกจากระบบ &nbsp;<i  class="fa-solid fa-right-from-bracket"></i></a>
+        </div>
+        <div class="home">
+            <form action="">
+            <table>
+                <tr>
+                    <td><h2>ประเภทโครงงาน<span style="color: red;">* </span> </h2></td>
+                    <td> : <input type="radio" id="1" value="" name="project" > &nbsp;<label for="1">โครงงานพิเศษ</label>
+                        <input type="radio" id="2" value="" name="project"> &nbsp;<label for="2">โครงงานสหกิจ</label></td>
+                    
+                </tr>
+                <tr>
+                    <td><h2>ชื่อโครงงาน<span style="color: red;">* </span> </h2></td>
+                    <td> : <input type="text" class="ip-text" style="width: 400px;" value=""></td>
+                    
+                </tr>
+                <tr>
+                    <td><h2>กรณีศึกษา </h2></td>
+                    <td> : <input type="text" class="ip-text" style="width: 400px;" value=""></td>
+                    
+                </tr>
+                <tr>
+                    <td><h2>ชื่อโครงงานภาษาอังกฤษ<span style="color: red;">* </span> </h2></td>
+                    <td> : <input type="text" class="ip-text" style="width: 400px;" value=""></td>
+                    
+                </tr>
+                <tr>
+                    <td><h2>กรณีศึกษาภาษาอังกฤษ </h2></td>
+                    <td> : <input type="text" class="ip-text" style="width: 400px;" value=""></td>
+                    
+                </tr>
+                <tr>
+                    <td><h2>ผู้จัดทำ<span style="color: red;">* </span> </h2></td>
+                    <td> : <input type="text" readonly class="ip-text" style="width: 400px;background-color: rgb(208, 208, 208);font-weight:600;" value="6806022510408 นางสาวพีรยา จันแปลง" ></td>
+                    
+                </tr>
+                <tr>
+                    <td><h2>ผู้ร่วมจัดทำ </h2></td>
+                    <td> : <input type="text" class="ip-text" style="width: 200px;" placeholder="กรอกรหัสนักศึกษา.." value="">
+                        <input type="text" class="ip-text" style="width: 400px;" placeholder="กรอกชื่อนักศึกษา.." value=""></td>
+                    
+                </tr>
+                <tr>
+                    <td><h2>ผู้ร่วมจัดทำ </h2></td>
+                    <td> : <input type="text" class="ip-text" style="width: 200px;" placeholder="กรอกรหัสนักศึกษา.." value="">
+                        <input type="text" class="ip-text" style="width: 400px;" placeholder="กรอกชื่อนักศึกษา.." value=""></td>
+                    
+                </tr>
+                <tr>
+                    <td><h2>ผู้ร่วมจัดทำ </h2></td>
+                    <td> : <input type="text" class="ip-text" style="width: 200px;" placeholder="กรอกรหัสนักศึกษา.." value="">
+                        <input type="text" class="ip-text" style="width: 400px;" placeholder="กรอกชื่อนักศึกษา.." value=""></td>
+                    
+                </tr>
+                <tr>
+                    <td><h2>อาจารย์ที่ปรึกษา<span style="color: red;">* </span> </h2></td>
+                    <td class="select-wrapper"> : <select id="advisor" name="advisor">
+                                <option value="">-- กรุณาเลือกอาจารย์ --</option>
+                                <option value="ผศ.ดร.บีสุดา ดาวเรือง">ผศ.ดร.บีสุดา ดาวเรือง</option>
+                                <option value="รศ.ดร.ยุพิน สรรพคุณ">รศ.ดร.ยุพิน สรรพคุณ</option>
+                                <option value="ผศ.นิมิต ศรีคำทา">ผศ.นิมิต ศรีคำทา</option>
+                                <option value="ผศ.ดร.ขนิษฐา นามี">ผศ.ดร.ขนิษฐา นามี</option>
+                                <option value="อ.ดร.วัชรชัย คงศิริวัฒนา">อ.ดร.วัชรชัย คงศิริวัฒนา</option>
+                                <option value="รศ.ดร.อนิราช มิ่งขวัญ">รศ.ดร.อนิราช มิ่งขวัญ</option>
+                                <option value="ผศ.ดร.สุพาภรณ์ ซิ้มเจริญ">ผศ.ดร.สุพาภรณ์ ซิ้มเจริญ</option>
+                                <option value="อ.ดร.พิทย์พิมล ชูรอด">อ.ดร.พิทย์พิมล ชูรอด</option>
+                                <option value="ผศ.นพเก้า ทองใบ">ผศ.นพเก้า ทองใบ</option>
+                                <option value="ผศ.นพดล บูรณ์กุศล">ผศ.นพดล บูรณ์กุศล</option>
+                                <option value="ผศ.ดร.นัฎฐพันธ์ นาคพงษ์">ผศ.ดร.นัฎฐพันธ์ นาคพงษ์</option>
+                                <option value="อ.ดร.ศรายุทธ ธเนศสกุลวัฒนา">อ.ดร.ศรายุทธ ธเนศสกุลวัฒนา</option>
+                                <option value="ผศ.สมชัย เชียงพงศ์พันธุ์">ผศ.สมชัย เชียงพงศ์พันธุ์</option>
+                                <option value="อ.ดร.ประดิษฐ์ พิทักษ์เสถียรกุล">อ.ดร.ประดิษฐ์ พิทักษ์เสถียรกุล</option>
+                                <option value="อ.ดร.กาญจน์ ณ ศรีธะ">อ.ดร.กาญจน์ ณ ศรีธะ</option>
+                                <option value="ผศ.สิวาลัย จินเจือ">ผศ.สิวาลัย จินเจือ</option>
+                                <option value="ผศ.ดร.อรบุษป์ วุฒิกมลชัย">ผศ.ดร.อรบุษป์ วุฒิกมลชัย</option>
+                                <option value="ผศ.ดร.สุปีติ กุลจันทร์">ผศ.ดร.สุปีติ กุลจันทร์</option>
+                            </select>
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td><h2>อาจารย์ที่ปรึกษาร่วม </h2></td>
+                    <td class="select-wrapper"> : <select id="advisor" name="advisor">
+                                <option value="">-- กรุณาเลือกอาจารย์ --</option>
+                                <option value="ผศ.ดร.บีสุดา ดาวเรือง">ผศ.ดร.บีสุดา ดาวเรือง</option>
+                                <option value="รศ.ดร.ยุพิน สรรพคุณ">รศ.ดร.ยุพิน สรรพคุณ</option>
+                                <option value="ผศ.นิมิต ศรีคำทา">ผศ.นิมิต ศรีคำทา</option>
+                                <option value="ผศ.ดร.ขนิษฐา นามี">ผศ.ดร.ขนิษฐา นามี</option>
+                                <option value="อ.ดร.วัชรชัย คงศิริวัฒนา">อ.ดร.วัชรชัย คงศิริวัฒนา</option>
+                                <option value="รศ.ดร.อนิราช มิ่งขวัญ">รศ.ดร.อนิราช มิ่งขวัญ</option>
+                                <option value="ผศ.ดร.สุพาภรณ์ ซิ้มเจริญ">ผศ.ดร.สุพาภรณ์ ซิ้มเจริญ</option>
+                                <option value="อ.ดร.พิทย์พิมล ชูรอด">อ.ดร.พิทย์พิมล ชูรอด</option>
+                                <option value="ผศ.นพเก้า ทองใบ">ผศ.นพเก้า ทองใบ</option>
+                                <option value="ผศ.นพดล บูรณ์กุศล">ผศ.นพดล บูรณ์กุศล</option>
+                                <option value="ผศ.ดร.นัฎฐพันธ์ นาคพงษ์">ผศ.ดร.นัฎฐพันธ์ นาคพงษ์</option>
+                                <option value="อ.ดร.ศรายุทธ ธเนศสกุลวัฒนา">อ.ดร.ศรายุทธ ธเนศสกุลวัฒนา</option>
+                                <option value="ผศ.สมชัย เชียงพงศ์พันธุ์">ผศ.สมชัย เชียงพงศ์พันธุ์</option>
+                                <option value="อ.ดร.ประดิษฐ์ พิทักษ์เสถียรกุล">อ.ดร.ประดิษฐ์ พิทักษ์เสถียรกุล</option>
+                                <option value="อ.ดร.กาญจน์ ณ ศรีธะ">อ.ดร.กาญจน์ ณ ศรีธะ</option>
+                                <option value="ผศ.สิวาลัย จินเจือ">ผศ.สิวาลัย จินเจือ</option>
+                                <option value="ผศ.ดร.อรบุษป์ วุฒิกมลชัย">ผศ.ดร.อรบุษป์ วุฒิกมลชัย</option>
+                                <option value="ผศ.ดร.สุปีติ กุลจันทร์">ผศ.ดร.สุปีติ กุลจันทร์</option>
+                            </select>
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td><h2>อีเมลผู้จัดทำ<span style="color: red;">* </span> </h2></td>
+                    <td> : <input type="email" readonly class="ip-text" style="width: 400px;background-color: rgb(208, 208, 208);font-weight:600;" value="s6806022510408@email.kmutnb.ac.th" ></td>
+                    
+                </tr>
+                <tr>
+                    <td style="padding-bottom: 15%;"><h2>ที่อยู่ผู้จัดทำ<span style="color: red;">* </span> </h2></td>
+                    <td>  <textarea name="" id=""></textarea></td>
+                    
+                </tr>
+                <tr>
+                    <td ><h2>ทก.01<span style="color: red;">* </span> </h2></td>
+                    <td> <input type="file" name="" id=""></td>
+                    
+                </tr>
+                <tr>
+                    <td></td>
+                    <td style="padding-top: 3%;padding-bottom: 4%;">
+                        <button type="submit" class="btn btn-g">ยืนยันข้อมูล</button>&nbsp;&nbsp;
+                        <button type="reset" class="btn btn-r">ล้างข้อมูล</button>
+                    
+                    </td>
+                </tr>
+            </table>
+            </form>
+        </div>
+    </div>
+
+  <!-- <script>
+    function toggleMenu() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script> -->
+
+</body>
+</html>

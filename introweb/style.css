@@ -1,0 +1,280 @@
+*{
+    font-family: "Athiti", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.main-log{
+    width: 550px;
+    height: 380px;
+    border: 1px solid #989797;
+    border-radius: 12px;
+    text-align: left;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    padding: 2%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 8px 32px rgba(0, 24, 64, 0.438);
+}
+body{
+
+    margin: 0%;
+}
+.bg-log{
+    background-image: url(img/bg-log.png);
+    background-size:cover ;
+    
+    background-repeat: no-repeat;
+}
+.head-log{
+    display: flex;
+}
+.form-log{
+    
+    margin-top: 4%;
+    margin-left: 25%;
+    font-size: 120%;
+}
+.btn{
+    display: inline-block;
+    padding: 5px 20px;
+    
+    border: none;
+    font-size: 16px;
+    font-family: "Athiti", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    cursor: pointer;
+    backdrop-filter: blur(5px);
+    
+    border-radius: 5px;
+}
+.btn-g{
+    background-color: rgb(75, 165, 75);
+    color: white;
+}
+.btn-r{
+    background-color: rgb(208, 74, 74);
+    color: white;
+}
+.btn-sky{
+    background-color: rgb(41, 102, 255);
+    color: white;
+}
+.btn-g:hover{
+    background: rgba(25, 187, 39, 0.559);
+    transform: scale(1.05);
+    color: black;
+}
+.btn-r:hover{
+    background: rgba(187, 25, 25, 0.559);
+    transform: scale(1.05);
+    color: black;
+}
+.btn-sky:hover{
+    background: rgb(157, 183, 248);
+    transform: scale(1.05);
+    color: black;
+}
+.ip-text{
+    width: 200px;
+    padding: 4px 3px;
+    border: 1px solid #989797;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.3s ease;
+    
+}
+.ip-text:focus{
+    border-color: rgb(29, 0, 133);
+    box-shadow: 0 0 8px rgba(0, 170, 255, 0.6);
+}
+.main-student{
+    display: flex;
+}
+.menu{
+    background-color: rgb(255, 255, 255);
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+    flex: 15%;
+    position: fixed;
+    height: 100%;
+    width: 15%;
+    top: 0;
+    left: 0;
+    box-shadow: 0 8px 5px rgba(0, 24, 64, 0.438);
+}
+.home{
+    padding-top: 10px;
+    padding-left: 18%; 
+    flex-direction: column;
+    flex: 85%;
+}
+.home-newuser{
+    width: 750px;
+    height: 380px;
+    border: 1px solid #989797;
+    border-radius: 12px;
+    text-align: left;
+    position: absolute;
+    top: 15%;
+    left: 32%;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 8px 32px rgba(0, 24, 64, 0.438);
+}
+.home-user{
+    width: 750px;
+    height: 490px;
+    border: 1px solid #696fb7;
+    border-radius: 12px;
+    text-align: left;
+    position: absolute;
+    top: 15%;
+    left: 30%;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 8px 32px rgba(100, 154, 247, 0.438);
+}
+.menu-option{
+    display: block;               
+    font-size: 18px;
+    text-decoration: none;        
+    color: #333;                  
+    font-weight: bold;            
+                
+    padding: 5%;
+}
+.menu-action{
+    background-color: #0a3fff;   
+    color: white;             
+    border-radius: 30px 0 0 30px;
+    
+}
+table h2{
+    margin: 0%;
+}
+table td{
+    font-size: 20px;
+}
+  select {
+    width: 300px;               /* ความกว้าง */
+    padding: 10px 15px;         /* ระยะห่างภายใน */
+    border-radius: 8px;         /* มุมมน */
+    border: 1px solid #ccc;     /* ขอบ */
+    background-color: #f9f9f9;  /* สีพื้นหลัง */
+    font-size: 16px;            /* ขนาดตัวอักษร */
+    appearance: none;           /* เอา arrow ของ browser ออก (บาง browser) */
+    -webkit-appearance: none;   /* สำหรับ Safari/Chrome */
+    -moz-appearance: none;      /* สำหรับ Firefox */
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  /* เปลี่ยนสีเมื่อ focus */
+  select:focus {
+    border-color: rgb(29, 0, 133);
+    box-shadow: 0 0 8px rgba(0, 170, 255, 0.6);
+    outline: none;
+  }
+
+  /* container สำหรับ arrow */
+  .select-wrapper {
+    position: relative;
+    display: inline-block;
+  }
+  .select-wrapper::after {
+    content: "▼";
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #555;
+    font-size: 12px;
+  }
+  textarea {
+    width: 100%;                 /* ความกว้างเต็มพื้นที่ container */
+    min-height: 120px;           /* ความสูงขั้นต่ำ */
+    padding: 10px 15px;          /* ระยะห่างด้านใน */
+    font-size: 16px;             /* ขนาดตัวอักษร */
+    border: 1px solid #ccc;      /* ขอบปกติ */
+    border-radius: 8px;          /* มุมมน */
+    resize: vertical;            /* ปรับขนาดได้เฉพาะแนวตั้ง */
+    background-color: #f9f9f9;   /* สีพื้นหลัง */
+    transition: border-color 0.3s, box-shadow 0.3s; /* ลื่นเวลามี focus */
+    font-family: Arial, sans-serif;
+  }
+
+  textarea:focus {
+    border-color: rgb(29, 0, 133);
+    box-shadow: 0 0 8px rgba(0, 170, 255, 0.6);
+    outline: none;               /* เอา outline ของ browser ออก */
+  }
+
+  /* placeholder สีอ่อน */
+  textarea::placeholder {
+    color: #999;
+  }
+
+
+.progress-circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: #333;
+  background: conic-gradient(
+    #8de65a calc(var(--percent) * 1%), /* สีเขียวตามเปอร์เซ็นต์ */
+    #ddd 0
+  );
+}
+.progress-circle span {
+  position: absolute;
+}
+.wrapper {
+  position: relative;
+  display: inline-block;
+}
+.wrapper::before {
+  content: "";
+  position: absolute;
+  top: 19px;
+  left: 19px;
+  right: 19px;
+  bottom: 19px;
+  background: #fff;
+  border-radius: 50%;
+}
+  
+/* @media screen and (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+  .content {
+    margin-left: 0;
+  }
+  .topnav {
+    display: block;
+  }
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+} */
