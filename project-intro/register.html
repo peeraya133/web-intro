@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image" href="img/logoIT.png">
+    <title>ระบบการจัดการโครงงาน - สมัครเข้าใช้งาน</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&family=Athiti:wght@200;300;400;500;600;700&family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-log">
+    
+    <div class="main-reg">
+        <div class="head-log">
+            <!-- <img src="img/logoIT.png" width="20%" height="15%" alt="">&nbsp;&nbsp;&nbsp;
+            <h2>ระบบการจัดการโครงงานของนักศึกษา<br>ภาควิชาเทคโนโลยีสารสนเทศ</h2> -->
+            <!-- <img src="img/head.png" width="10%" alt=""> -->
+        </div>
+        
+        <div class="form-reg left" style="margin-top: 0%;width: 35%;margin-left: 2%;">
+            <img src="img/head.png" width="100%" alt="">
+            <h2 style="font-weight: 500;text-align: center;margin-top: 0%;color: rgb(0, 68, 255);margin-bottom: 2%;">ลงทะเบียนเข้าใช้งาน</h2>
+            <form action="">
+                <table style="text-align: end;width: 90%;">
+                    
+                    <tr>
+                        <td style="width: 30%;"><label for="">รหัสนักศึกษา </label></td>
+                        <td style="width: 60%;"><input style="width: 100%;" class="ip-text" type="text" placeholder="กรอกรหัสนักศึกษา..."></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">คำนำหน้าชื่อ </label></td>
+                        <td >
+                            <select style="width: 103%;" name="" id="" class="ip-text"> 
+                                <option class=""  value="" >---โปรดเลือกเพียงตัวเลือกเดียว---</option>
+                                <option class=""  value="">นาย</option>
+                                <option class=""  value="">นาง</option>
+                                <option class=""  value="">นางสาว</option>
+                            </select>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td ><label for="">ชื่อจริง </label></td>
+                        <td><input style="width: 100%;" class="ip-text" type="text" placeholder="กรอกชื่อจริง..."></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">นามสกุล </label></td>
+                        <td><input style="width: 100%;" class="ip-text" type="text" placeholder="กรอกนามสกุล..."></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">สาขาวิชา </label></td>
+                        <td >
+                            <select style="width: 103%;" name="" id="" class="ip-text"> 
+                                <option class=""  value="" >---โปรดเลือกเพียงตัวเลือกเดียว---</option>
+                                <option class=""  value="">IT</option>
+                                <option class=""  value="">ITI</option>
+                                <option class=""  value="">INE</option>
+                                <option class=""  value="">INET</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="">ชื่อผู้ใช้ </label></td>
+                        <td><input style="width: 100%;" class="ip-text" type="text" placeholder="กรอกชื่อผู้ใช้สำหรับเข้าสู่ระบบ..."></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">รหัสผ่าน </label></td>
+                        <td><input style="width: 100%;" class="ip-text" type="text" placeholder="กรอกรหัสผ่าน..."></td>
+                    </tr>
+                </table>
+                &nbsp;&nbsp;&nbsp;
+                <button style="margin-top: 5%;margin-left: 15%;" type="button" onclick="submitData()" class="btn btn-g">ลงทะเบียนเข้าใช้งาน</button>
+                &nbsp;
+                <button style="margin-top: 5%;" type="reset" class="btn btn-r">ล้างข้อมูล</button>
+            </form>
+            <p style="margin-left: 20%;">มีบัญชีแล้ว? <a href="login.html">เข้าสู่ระบบ</a></p>
+        </div>
+
+        <div class="divider" style="width: 2px; background-color: #ccc;"></div>
+
+        <div class="form-reg" style="margin-top: 2%;width: 65%;margin-left: 2%;">
+            <img src="img/reg.jpg" style="border-radius: 20px;" width="100%" alt="">
+        </div>
+
+        
+        
+    </div>
+
+    <script>
+        function submitData() {
+            Swal.fire({
+                title: "ลงทะเบียนเรียบร้อย",
+                icon: "success",
+                confirmButtonText: "เข้าสู่ระบบ",   // เปลี่ยนข้อความปุ่ม
+                confirmButtonColor: "#4ba54b"
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    // เมื่อกดปุ่ม "เข้าสู่ระบบ"
+                    window.location.href = "login.html";  // ไปที่หน้า login.html
+                }
+            });
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

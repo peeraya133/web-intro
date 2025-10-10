@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image" href="/../img/logoIT.png">
+    <title>ระบบการจัดการโครงงาน - หน้าแรก</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&family=Athiti:wght@200;300;400;500;600;700&family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main-student">
+        <div class="menu">
+            <a href="home_user.html"><img src="/../img/head.png" width="100%" alt=""></a>
+            <a href="home_kru.html" class="menu-option menu-action">หน้าหลัก</a>
+            <a href="Progress_Report_kru.html" class="menu-option">รายงานความคืบหน้า</a>
+            <a href="Notification.html" class="menu-option">แจ้งเตือนถึงคุณ</a>
+            <a href="Student_Project_Management.html" class="menu-option">จัดการโครงงานของนักศึกษา</a>
+            <a href="User_info.html" class="menu-option">ข้อมูลผู้ใช้งาน</a>
+            <a href="javascript:void(0)" 
+              style="color: rgb(182, 2, 2);" 
+              class="menu-option" 
+              onclick="logoutConfirm()">
+              ออกจากระบบ &nbsp;<i class="fa-solid fa-right-from-bracket"></i>
+            </a>
+        </div>
+
+        <div class="home">
+            <div class="home-user">
+                <br>
+                <center>
+                    <h2 style="font-weight: 500;">การแจ้งเตือน </h2>
+
+                    
+                    <section class="sec">
+                        <div class="dots">
+                            
+                          <span style="--i:1;"></span>
+                          <span style="--i:2;"></span>
+                          <span style="--i:3;"></span>
+                          <span style="--i:4;"></span>
+                          <span style="--i:5;"></span>
+                          <span style="--i:6;"></span>
+                          <span style="--i:7;"></span>
+                          <span style="--i:8;"></span>
+                          <span style="--i:9;"></span>
+                          <span style="--i:10;"></span>
+                          <span style="--i:11;"></span>
+                          <span style="--i:12;"></span>
+                          <span style="--i:13;"></span>
+                          <span style="--i:14;"></span>
+                          <span style="--i:15;"></span>
+                          
+                        </div>
+                        
+                    </section>
+                        <h2>2 การแจ้งเตือน</h2>
+                    <h1 style="margin: 0%;margin-top: 1%;">ตรวจสอบการแจ้งเตือน 
+                        <a href="Notification.html"><button class="btn btn-g">คลิ๊ก</button></a>
+                    </h1>
+
+                    
+                </center>
+            </div>
+        </div>
+    </div>
+        <script>
+              function logoutConfirm() {
+            Swal.fire({
+                title: "จะออกจากระบบหรือไม่?",
+                
+                icon: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#4ba54b",
+                cancelButtonColor: "#d04a4a",
+                confirmButtonText: "ใช่, ออกจากระบบ",
+                cancelButtonText: "ยกเลิก"
+            }).then((result) => {
+                if (result.isConfirmed) {
+                // ไปยังหน้า login.html
+                window.location.href = "/../login.html";
+                }
+            });
+            }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

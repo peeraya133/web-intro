@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="..\stylenus.css">
+    <link rel="icon" type="image" href="../img/logoIT.png">
+    <title>ระบบการจัดการโครงงาน - หน้าแรก</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&family=Athiti:wght@200;300;400;500;600;700&family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main-student">
+        <div class="menu">
+            <a href="../home_user.html"><img src="../img/head.png" width="100%" alt=""></a>
+            <a href="home_officer.html" class="menu-action">หน้าหลัก</a>
+            <a href="check_officer.html" class="menu-option">ตรวจสอบคำขอ</a>
+            <a href="Manageproject_officer.html" class="menu-option">การจัดการโครงงานของนักศึกษา</a>
+            <a href="table_officer.html" class="menu-option">ตารางสอบ</a>
+            <a href="User information_officer.html" class="menu-option">ข้อมูลผู้ใช้งาน</a>
+            <a href="javascript:void(0)" 
+              style="color: rgb(182, 2, 2);" 
+              class="menu-option" 
+              onclick="logoutConfirm()">
+              ออกจากระบบ &nbsp;<i class="fa-solid fa-right-from-bracket"></i>
+            </a>
+        </div>
+    
+
+        <div class="content1">
+            <div class="้home">
+                <div class="home-user">
+                    <div class="card">
+                        <h2>คำขอวันนี้</h2>
+                        <div class="circle-arrow">
+                            <div class="circle-text">2 คำขอ</div>
+                        </div>
+                        <p>จัดการคำขอในระบบ</p>
+                        <button onclick="location.href='check_officer.html'" class="btn">Go</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  <script>
+              function logoutConfirm() {
+            Swal.fire({
+                title: "จะออกจากระบบหรือไม่?",
+                
+                icon: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#4ba54b",
+                cancelButtonColor: "#d04a4a",
+                confirmButtonText: "ใช่, ออกจากระบบ",
+                cancelButtonText: "ยกเลิก"
+            }).then((result) => {
+                if (result.isConfirmed) {
+                // ไปยังหน้า login.html
+                window.location.href = "/../login.html";
+                }
+            });
+            }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

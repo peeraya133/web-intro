@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="..\style.css">
+  <link rel="icon" type="image" href="../img/logoIT.png">
+  <title>ระบบการจัดการโครงงาน - จัดการโครงงาน</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&family=Athiti:wght@200;300;400;500;600;700&family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <style>
+    .search-wrapper {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      z-index: 1000;
+    }
+
+    .search-wrapper .form {
+      --width-of-input: 250px;
+      --height-of-input: 45px;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <div class="menu">
+        <a href="home_user.html"><img src="/../img/head.png" width="100%" alt=""></a>
+            <a href="home_kru.html" class="menu-option ">หน้าหลัก</a>
+            <a href="Progress_Report_kru.html" class="menu-option ">รายงานความคืบหน้า</a>
+            <a href="Notification.html" class="menu-option">แจ้งเตือนถึงคุณ</a>
+            <a href="Student_Project_Management.html" class="menu-option menu-action">จัดการโครงงานของนักศึกษา</a>
+            <a href="User_info.html" class="menu-option">ข้อมูลผู้ใช้งาน</a>
+            <a href="javascript:void(0)" 
+              style="color: rgb(182, 2, 2);" 
+              class="menu-option" 
+              onclick="logoutConfirm()">
+              ออกจากระบบ &nbsp;<i class="fa-solid fa-right-from-bracket"></i>
+            </a>
+    </div>
+
+    <div class="main-student" style="margin-left: 18%; flex-direction: column;">
+        <a href="Student_Project_Management.html" style="text-decoration: none"><h2 style="flex: 100%; color: black;">< ย้อนกลับ</h2></a>
+                <table>
+                            <tr>
+                                <td style="width: 10%; ;"><h3 style="font-weight: 500;margin: 0%;">ความคืบหน้ารวม :</h3></td>
+                                <td style="width: 80%;"><h3 style="margin: 1%;">50%</h3></td>
+                            </tr>
+                            <tr>
+                                <td style="width: 10%; ;"><h3 style="font-weight: 500;margin: 0%;">รหัสโครงงาน :</h3></td>
+                                <td style="width: 80%;"><h3 style="margin: 1%;">68015</h3></td>
+                            </tr>
+                            <tr>
+                                <td style="width: 10%; ;"><h3 style="font-weight: 500;margin: 0%;">ชื่อโครงงาน :</h3></td>
+                                <td style="width: 80%;"><h3 style="margin: 1%;">ระบบเช่าหนังสือ</h3></td>
+                            </tr>
+                            <tr>
+                                <td style="width: 20%; ;"><h3 style="font-weight: 500;margin: 0%;">ชื่อโครงงานภาษาอังกฤษ :</h3></td>
+                                <td style="width: 80%;"><h3 style="margin: 1%;">Book Rental Store Management System</h3></td>
+                            </tr>
+                            <tr>
+                                <td style="width: 20%; ;"><h3 style="font-weight: 500;margin: 0%;">กรณีศึกษา :</h3></td>
+                                <td style="width: 80%;"><h3 style="margin: 1%;">สำนักหอสมุดกลาง มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือวิทยาเขตปราจีนบุรี</h3></td>
+                            </tr>
+                            <tr>
+                                <td style="width: 20%; ;"><h3 style="font-weight: 500;margin: 0%;">กรณีศึกษาภาษาอังกฤษ :</h3></td>
+                                <td style="width: 80%;"><h3 style="margin: 1%;">Kmutnb Library Prachinburi Campus </h3></td>
+                            </tr>
+                            <tr>
+                                <td style="width: 18%; ;"><h3 style="font-weight: 500;margin: 0%;">ผู้จัดทำ :</h3></td>
+                                <td style="width: 82%;"><h3 style="margin: 1%;">6806022510408 นางสาวพีรยา จันแปลง</h3></td>
+                            </tr>
+                            <tr>
+                                <td style="width: 18%; ;"><h3 style="font-weight: 500;margin: 0%;">ผู้ร่วมจัดทำ :</h3></td>
+                                <td style="width: 82%;"><h3 style="margin: 1%;">6806022510450 นายธีรวัฒน์ โพธิ์สาวัง</h3></td>
+                            </tr>
+                            <tr>
+                                <td style="width: 18%; ;"><h3 style="font-weight: 500;margin: 0%;">ผู้ร่วมจัดทำ :</h3></td>
+                                <td style="width: 82%;"><h3 style="margin: 1%;">6806022510455 นายเดชาวัต เนติชัย</h3></td>
+                            </tr>
+                            <tr>
+                                <td style="width: 18%; ;"><h3 style="font-weight: 500;margin: 0%;">ผู้ร่วมจัดทำ :</h3></td>
+                                <td style="width: 82%;"><h3 style="margin: 1%;">- </h3></td>
+                            </tr>
+                            <tr>
+                                <td style="width: 18%; ;"><h3 style="font-weight: 500;margin: 0%;">อาจารย์ที่ปรึกษา :</h3></td>
+                                <td style="width: 82%;"><h3 style="margin: 1%;">ผศ.ดร.ขนิษฐา นามี</h3></td>
+                            </tr>
+                            <tr>
+                                <td style="width: 18%; ;"><h3 style="font-weight: 500;margin: 0%;">อาจารย์ร่วมปรึกษา :</h3></td>
+                                <td style="width: 82%;"><h3 style="margin: 1%;">ผศ.พีระศักดิ์ เสรีกุล</h3></td>
+                            </tr>
+                            <tr>
+                                <td style="width: 18%; ;"><h3 style="font-weight: 500;margin: 0%;">Email ผู้จัดทำ :</h3></td>
+                                <td style="width: 82%;"><h3 style="margin: 1%;">s6806022510408@email.kmutnb.ac.th</h3></td>
+                            </tr>
+                            <tr>
+                                <td style="width: 18%; ;"><h3 style="font-weight: 500;margin: 0%;">ทก.01 :</h3></td>
+                                <td style="width: 82%;"><h3 style="margin: 1%;"><a href="files/ทก01.pdf" style="margin: 1%;">ทก01.pdf</a></h3></td>
+                            </tr>
+                            <tr>
+                                <td style="width: 25%; ;"><h3 style="font-weight: 500;margin: 0%;">ผลงานทั้งหมด :</h3></td>
+                                <td style="width: 82%;">
+                                    <a href="files/ทก01.pdf" style="margin: 1%;">100.pdf</a>
+                                    <a href="files/ทก01.pdf" style="margin: 1%;">02.pdf</a>
+                                    <a href="files/ทก01.pdf" style="margin: 1%;">03.pdf</a>
+                                    <a href="files/ทก01.pdf" style="margin: 1%;">04.pdf</a>
+                                    <a href="files/ทก01.pdf" style="margin: 1%;">05.pdf</a>
+                                
+                                </td>
+                            </tr>
+        </table>
+
+        
+
+     
+
+
+        
+    </div>
+    <script>
+              function logoutConfirm() {
+            Swal.fire({
+                title: "จะออกจากระบบหรือไม่?",
+                
+                icon: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#4ba54b",
+                cancelButtonColor: "#d04a4a",
+                confirmButtonText: "ใช่, ออกจากระบบ",
+                cancelButtonText: "ยกเลิก"
+            }).then((result) => {
+                if (result.isConfirmed) {
+                // ไปยังหน้า login.html
+                window.location.href = "/../login.html";
+                }
+            });
+            }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="..\popup.js"></script>
+</body>
+</html>

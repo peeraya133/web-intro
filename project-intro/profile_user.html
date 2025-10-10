@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image" href="img/logoIT.png">
+    <title>ระบบการจัดการโครงงาน - ข้อมูลผู้ใช้งาน</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&family=Athiti:wght@200;300;400;500;600;700&family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main-student">
+        <div class="menu">
+            <a href="home_user.html"><img src="img/head.png" width="100%" alt=""></a>
+            <a href="home_user.html" class="menu-option ">หน้าหลัก</a>
+            <a href="project_user.html" class="menu-option ">การจัดการโครงงาน</a>
+            <a href="report_user.html" class="menu-option">รายงานความคืบหน้า</a>
+            <a href="quiz_user.html" class="menu-option ">ยื่นสอบ</a>
+            <a href="result_user.html" class="menu-option">ผลการสอบ</a>
+            <a href="profile_user.html" class="menu-option menu-action">ข้อมูลผู้ใช้งาน</a>
+            <a href="javascript:void(0)" 
+              style="color: rgb(182, 2, 2);" 
+              class="menu-option" 
+              onclick="logoutConfirm()">
+              ออกจากระบบ &nbsp;<i class="fa-solid fa-right-from-bracket"></i>
+            </a>
+        </div>
+        <div class="home">
+            
+            <form action="" class="">
+                <table style="width: 100%;">
+                   
+                    <tr>
+                        <td style="width: 10%; ;"><h3 style="font-weight: 500;margin: 0%;">รหัสนักศึกษา :</h3></td>
+                        <td style="width: 80%;"><h3 style="margin: 1%;">6806022510408 </h3></td>
+                    </tr>
+                    
+                    </tr>
+                    <tr>
+                        <td style="width: 18%; ;"><h3 style="font-weight: 500;margin: 0%;">ชื่อ-นามสกุลนักศึกษา :</h3></td>
+                        <td style="width: 82%;"><h3 style="margin: 1%;">นางสาวพีรยา จันแปลง</h3></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 18%; ;"><h3 style="font-weight: 500;margin: 0%;">สาขาวิชา :</h3></td>
+                        <td style="width: 82%;"><h3 style="margin: 1%;">INET</h3></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 18%; ;"><h3 style="font-weight: 500;margin: 0%;">Email :</h3></td>
+                        <td style="width: 82%;"><h3 style="margin: 1%;">s68060022510408@email.kmutnb.ac.th</h3></td>
+                    </tr>
+                    
+                    
+                </table>
+                <span >
+                    <button type="button" style="margin: 15px;" class="btn btn-y" onclick="openModal()" >แก้ไขข้อมูล</button>
+                    <button type="reset" style="margin: 15px;" class="btn btn-r" >เปลี่ยนรหัสผ่าน</button>
+                </span>
+            </form>
+        </div>
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h3>กรอกข้อมูลใหม่</h3>
+            <table>
+                <tr>
+                    <td style="width: 50%;text-align: end;"><label for=""><p>รหัสนักศึกษา : </p></label></td>
+                    <td style="width: 50%;"><input style="background-color: rgb(230, 230, 230);" readonly type="text" class="ip-text" id="newData" value="6806022510408"></td>
+                </tr>
+                <tr>
+                    <td style="width: 50%;text-align: end;"><label for=""><p>ชื่อ-นามสกุลนักศึกษา : </p></label></td>
+                    <td style="width: 50%;"><input type="text" class="ip-text" id="newData" value="นางสาวพีรยา จันแปลง"></td>
+                </tr>
+                <tr>
+                    <td style="width: 50%;text-align: end;"><label for=""><p>สาขาวิชา : </p></label></td>
+                    <td style="width: 50%;"><input type="text" class="ip-text" id="newData" value="INET"></td>
+                </tr>
+                
+                <tr>
+                    <td style="width: 50%;text-align: end;"><label for=""><p>Email : </p></label></td>
+                    <td style="width: 50%;"><input type="text" class="ip-text" id="newData" value="s68060022510408@email.kmutnb.ac.th"></td>
+                </tr>
+            </table>
+            <br>
+            <br>
+            <button class="btn btn-g" onclick="submitData()">บันทึก</button>
+        </div>
+    </div>
+    <script>
+        function openModal() {
+        document.getElementById("myModal").style.display = "block";
+        }
+
+        function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+        }
+
+        function submitData() {
+            Swal.fire({
+                title: "บันทึกเรียบร้อย!",
+                icon: "success",
+                confirmButtonText: "เรียบร้อย",   // เปลี่ยนข้อความปุ่ม
+                confirmButtonColor: "#4ba54b" 
+            });
+        }
+
+        window.openModal = openModal;
+        window.closeModal = closeModal;
+        window.submitData = submitData;
+    </script>
+    <script>
+              function logoutConfirm() {
+            Swal.fire({
+                title: "จะออกจากระบบหรือไม่?",
+                
+                icon: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#4ba54b",
+                cancelButtonColor: "#d04a4a",
+                confirmButtonText: "ใช่, ออกจากระบบ",
+                cancelButtonText: "ยกเลิก"
+            }).then((result) => {
+                if (result.isConfirmed) {
+                // ไปยังหน้า login.html
+                window.location.href = "login.html";
+                }
+            });
+            }
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <!-- <script>
+    function toggleMenu() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script> -->
+
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image" href="img/logoIT.png">
+    <title>ระบบการจัดการโครงงาน - รายงานความคืบหน้า</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&family=Athiti:wght@200;300;400;500;600;700&family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main-student">
+        <div class="menu">
+          <a href="home_user.html"><img src="img/head.png" width="100%" alt=""></a>
+            <div class="nav-links">
+              
+              <a href="home_user.html" class="menu-option ">หน้าหลัก</a>
+              <a href="project_user.html" class="menu-option ">การจัดการโครงงาน</a>
+              <a href="" class="menu-option menu-action">รายงานความคืบหน้า</a>
+              <a href="quiz_user.html" class="menu-option">ยื่นสอบ</a>
+              <a href="result_user.html" class="menu-option">ผลการสอบ</a>
+              <a href="profile_user.html" class="menu-option">ข้อมูลผู้ใช้งาน</a>
+                          <a href="javascript:void(0)" 
+                style="color: rgb(182, 2, 2);" 
+                class="menu-option" 
+                onclick="logoutConfirm()">
+                ออกจากระบบ &nbsp;<i class="fa-solid fa-right-from-bracket"></i>
+              </a>
+            </div>
+        </div>
+        <div class="home">
+            <div class="menu-project">
+                <a href="report_user.html" style="margin-left: 130px;" class="project-action">ความคืบหน้า</a>
+                <a href="report_user-edit.html" style="color: #333;font-weight: 500;">รายงานความคืบหน้า</a>
+                <a href="report_user_check.html" style="color: #333;font-weight: 500;">ตรวจสอบผลการรายงาน</a>
+                
+            </div>
+            <div class="main-project" style="flex-direction: column;">
+                <div class="" >
+                    <h2 style="font-weight: 500;">โครงงาน : 68015 ระบบเช่าหนังสือ</h2>
+                </div>
+                
+                <div class="" style=" flex: 100%;">
+                    <center >
+                        
+                    <div class="wrapper">
+                        <div class="progress-circle" style="--percent: 50;">
+                        <span>50%</span>
+                        </div>
+                    </div>
+                    <h2 >ความคืบหน้าปัจจุบันของโครงงาน 50 %</h2>
+                    <h3 style="color: red;margin: 0%;">ข้อแนะนำ : ควรรายงานความคืบหน้าข้อโครงงานเป็นประจำ</h3>
+                    
+                    </center>
+                </div>
+                
+
+                
+                
+            </div>
+        </div>
+    </div>
+    <script>
+              function logoutConfirm() {
+            Swal.fire({
+                title: "จะออกจากระบบหรือไม่?",
+                
+                icon: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#4ba54b",
+                cancelButtonColor: "#d04a4a",
+                confirmButtonText: "ใช่, ออกจากระบบ",
+                cancelButtonText: "ยกเลิก"
+            }).then((result) => {
+                if (result.isConfirmed) {
+                // ไปยังหน้า login.html
+                window.location.href = "login.html";
+                }
+            });
+            }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <!-- <script>
+    function toggleMenu() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script> -->
+
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image" href="img/logoIT.png">
+    <title>ระบบการจัดการโครงงาน - ผลการยื่นสอบ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&family=Athiti:wght@200;300;400;500;600;700&family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main-student">
+        <div class="menu">
+          <a href="home_user.html"><img src="img/head.png" width="100%" alt=""></a>
+          <a href="home_user.html" class="menu-option ">หน้าหลัก</a>
+          <a href="project_user.html" class="menu-option ">การจัดการโครงงาน</a>
+          <a href="report_user.html" class="menu-option ">รายงานความคืบหน้า</a>
+          <a href="quiz_user.html" class="menu-option">ยื่นสอบ</a>
+          <a href="" class="menu-option menu-action">ผลการสอบ</a>
+          <a href="profile_user.html" class="menu-option">ข้อมูลผู้ใช้งาน</a>
+                      <a href="javascript:void(0)" 
+              style="color: rgb(182, 2, 2);" 
+              class="menu-option" 
+              onclick="logoutConfirm()">
+              ออกจากระบบ &nbsp;<i class="fa-solid fa-right-from-bracket"></i>
+            </a>
+        </div>
+
+        <div class="home">
+          <div class="menu-project">
+            <a href="result_user.html"  class="project-action" style="margin-left: 32%;">ตารางสอบ</a>
+            <a href="resultquiz_user.html"  style="color: #333;font-size: 20px;font-weight: 500;">ผลการยื่นสอบ</a>
+            
+          </div>
+          <h2>68015 ระบบยืมหนังสือ</h2>
+          <table class="styled-table" style="width: 90%;">
+            <tr>
+              <th>ประเภทสอบ</th>
+              <th>วัน/เวลาสอบ</th>
+              <th>สถานที่สอบ</th>
+              <th>อาจารย์ที่ปรึกษา</th>
+              <th>กรรมการ</th>
+            </tr>
+            <tr >
+              <td style="width: 18%;">100%</td>
+              <td style="width: 18%;">30/11/67 10:00</td>
+              <td style="width: 18%;">B4-03</td>
+              <td style="width: 18%;">ผศ.นพเก้า  ทองใบ</td>
+              <td style="width: 18%;">รศ.ดร.ยุพิน  สรรพคุณ <br> ผศ.ดร.นัฎฐพันธ์  นาคพงษ์</td>
+            </tr>
+            
+          </table>
+          <div class="pagination">
+            <button>&laquo; ก่อนหน้า</button>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>ถัดไป &raquo;</button>
+          </div>
+        </div>
+    </div>
+    
+
+  <!-- <script>
+    function toggleMenu() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script> -->
+  <script>
+    document.getElementById('todayDate').value = new Date().toISOString().split('T')[0];
+
+    const fileInput = document.getElementById('fileInput');
+    const fileName = document.getElementById('fileName');
+
+    fileInput.addEventListener('change', () => {
+      if(fileInput.files.length > 0){
+        fileName.textContent = fileInput.files[0].name; // แสดงชื่อไฟล์
+      } else {
+        fileName.textContent = "ยังไม่ได้เลือกไฟล์";
+      }
+    });
+
+  </script>
+  <script>
+              function logoutConfirm() {
+            Swal.fire({
+                title: "จะออกจากระบบหรือไม่?",
+                
+                icon: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#4ba54b",
+                cancelButtonColor: "#d04a4a",
+                confirmButtonText: "ใช่, ออกจากระบบ",
+                cancelButtonText: "ยกเลิก"
+            }).then((result) => {
+                if (result.isConfirmed) {
+                // ไปยังหน้า login.html
+                window.location.href = "login.html";
+                }
+            });
+            }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+</body>
+</html>

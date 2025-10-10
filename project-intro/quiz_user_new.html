@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image" href="img/logoIT.png">
+    <title>ระบบการจัดการโครงงาน - ยื่นสอบ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&family=Athiti:wght@200;300;400;500;600;700&family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main-student">
+        <div class="menu">
+            <a href="home_user.html"><img src="img/head.png" width="100%" alt=""></a>
+            <a href="home_user.html" class="menu-option ">หน้าหลัก</a>
+            <a href="" class="menu-option">การจัดการโครงงาน</a>
+            <a href="" class="menu-option menu-action">ยื่นสอบ</a>
+            <a href="result_user.html" class="menu-option">ผลการสอบ</a>
+            <a href="profile_user.html" class="menu-option">ข้อมูลผู้ใช้งาน</a>
+                        <a href="javascript:void(0)" 
+              style="color: rgb(182, 2, 2);" 
+              class="menu-option" 
+              onclick="logoutConfirm()">
+              ออกจากระบบ &nbsp;<i class="fa-solid fa-right-from-bracket"></i>
+            </a>
+        </div>
+        <div class="home">
+            
+            <form action="" class="">
+                <table style="width: 100%;">
+                    <tr>
+                        <td style="width: 10%; ;"><h3 style="font-weight: 500;margin: 0%;">ประเภทยื่นสอบ : </h3></td>
+                        <td style="width: 80%;">
+                            <h3 style="margin: 1%;"><input type="radio" id="1" value="0" name="quiz" ><label title="ท่านสอบหัวข้อแล้ว" for="1"  >สอบหัวข้อ</label> &nbsp;
+                                                    <input type="radio" id="2" value="" name="quiz" disabled title="ความคืบหน้ายังไม่ครบ"><label title="ความคืบหน้ายังไม่ครบ" for="2" style="color: rgb(172, 172, 172);" >สอบ100%</label></h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 10%; ;"><h3 style="font-weight: 500;margin: 0%;">รหัสโครงงาน :</h3></td>
+                        <td style="width: 80%;"><h3 style="margin: 1%;">68015</h3></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 10%; ;"><h3 style="font-weight: 500;margin: 0%;">ชื่อโครงงาน :</h3></td>
+                        <td style="width: 80%;"><h3 style="margin: 1%;">ระบบเช่าหนังสือ</h3></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 20%; ;"><h3 style="font-weight: 500;margin: 0%;">ชื่อโครงงานภาษาอังกฤษ :</h3></td>
+                        <td style="width: 80%;"><h3 style="margin: 1%;">Book Rental Store Management System</h3></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 20%; ;"><h3 style="font-weight: 500;margin: 0%;">กรณีศึกษา :</h3></td>
+                        <td style="width: 80%;"><h3 style="margin: 1%;">สำนักหอสมุดกลาง มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือวิทยาเขตปราจีนบุรี</h3></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 20%; ;"><h3 style="font-weight: 500;margin: 0%;">กรณีศึกษาภาษาอังกฤษ :</h3></td>
+                        <td style="width: 80%;"><h3 style="margin: 1%;">Kmutnb Library Prachinburi Campus </h3></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 18%; ;"><h3 style="font-weight: 500;margin: 0%;">ผู้จัดทำ :</h3></td>
+                        <td style="width: 82%;"><h3 style="margin: 1%;">6806022510408 นางสาวพีรยา จันแปลง</h3></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 18%; ;"><h3 style="font-weight: 500;margin: 0%;">ผู้ร่วมจัดทำ :</h3></td>
+                        <td style="width: 82%;"><h3 style="margin: 1%;">6806022510450 นายธีรวัฒน์ โพธิ์สาวัง</h3></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 18%; ;"><h3 style="font-weight: 500;margin: 0%;">ผู้ร่วมจัดทำ :</h3></td>
+                        <td style="width: 82%;"><h3 style="margin: 1%;">6806022510455 นายเดชาวัต เนติชัย</h3></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 18%; ;"><h3 style="font-weight: 500;margin: 0%;">ผู้ร่วมจัดทำ :</h3></td>
+                        <td style="width: 82%;"><h3 style="margin: 1%;">- </h3></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 18%; ;"><h3 style="font-weight: 500;margin: 0%;">อาจารย์ที่ปรึกษา :</h3></td>
+                        <td style="width: 82%;"><h3 style="margin: 1%;">ผศ.ดร.นิติการ นาคเจือทอง</h3></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 18%; ;"><h3 style="font-weight: 500;margin: 0%;">อาจารย์ที่ปรึกษาร่วม :</h3></td>
+                        <td style="width: 82%;"><h3 style="margin: 1%;">ผศ.ดร.สุพาภรณ์ ซิ้มเจริญ</h3></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 18%; ;"><h3 style="font-weight: 500;margin: 0%;">Email ผู้จัดทำ :</h3></td>
+                        <td style="width: 82%;"><h3 style="margin: 1%;">s6806022510408@email.kmutnb.ac.th</h3></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 25%; ;"><h3 style="font-weight: 500;margin: 0%;">ทก01 :</h3></td>
+                        <td style="width: 82%;"><a href="files/ทก01.pdf" style="margin: 1%;">ทก_01.pdf</a></td>
+                    </tr>
+                    
+                </table>
+                <span style=" margin-left: 60%;">
+                    <button type="button" onclick="submitData()" style="margin: 15px;" class="btn btn-g" >ยืนยันการยื่นสอบ</button>
+                    <button type="reset" style="margin: 15px;" class="btn btn-r" >ยกเลิก</button>
+                </span>
+            </form>
+        </div>
+    </div>
+    <script>
+        function submitData() {
+            Swal.fire({
+                title: "ยื่นสอบเรียบร้อย รอตรวจสอบ",
+                text:"กรุณาเช็คอีเมลของท่านหรือเข้าเว็บไชต์เพื่อตรวจสอบตารางสอบเป็นประจำ",
+                icon: "success",
+                confirmButtonText: "เรียบร้อย",   // เปลี่ยนข้อความปุ่ม
+                confirmButtonColor: "#4ba54b" 
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    // เมื่อกดปุ่ม "เข้าสู่ระบบ"
+                    window.location.href = "home_user.html";  // ไปที่หน้า login.html
+                }
+            });
+        }
+    </script>
+  <!-- <script>
+    function toggleMenu() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script> -->
+  <script>
+              function logoutConfirm() {
+            Swal.fire({
+                title: "จะออกจากระบบหรือไม่?",
+                
+                icon: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#4ba54b",
+                cancelButtonColor: "#d04a4a",
+                confirmButtonText: "ใช่, ออกจากระบบ",
+                cancelButtonText: "ยกเลิก"
+            }).then((result) => {
+                if (result.isConfirmed) {
+                // ไปยังหน้า login.html
+                window.location.href = "login.html";
+                }
+            });
+            }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

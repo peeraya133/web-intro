@@ -1,0 +1,451 @@
+*{
+    font-family: "Athiti", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.menu {
+    background-color: #fff;
+    flex: 0 0 15%;             /* กำหนดความกว้าง fix ประมาณ 15% */
+    padding: 10px;
+    box-shadow: 0 8px 5px rgba(0, 24, 64, 0.438);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;             /* เต็มความสูงหน้าจอ */
+}
+
+.content {
+    flex: 1;                    
+    background: #f7f9fc;
+}
+
+.content1{
+    flex: 1;                    
+    display: flex;              /* เปิด flex */
+    justify-content: center;    /* จัดกึ่งกลางแนวนอน */
+    align-items: center;        /* จัดกึ่งกลางแนวตั้ง */
+    background: #f7f9fc;
+    padding: 20px 30px;
+}
+
+.home-user {
+    width: 700px;            
+    border: 1px solid #696fb7;
+    border-radius: 12px;
+    padding: 20px 50px;
+    background-color: #fff;
+    box-shadow: 0 8px 32px rgba(100, 154, 247, 0.438);
+}
+
+.main-student {
+    display: flex;             /* แบ่งเป็นสองฝั่ง */
+    height: 100vh;             /* เต็มหน้าจอ */
+}
+
+
+.main-log{
+    width: 550px;
+    height: 380px;
+    border: 1px solid #989797;
+    border-radius: 12px;
+    text-align: left;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    padding: 2%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 8px 32px rgba(0, 24, 64, 0.438);
+}
+
+body{
+
+    margin: 0%;
+}
+
+.bg-log{
+    background-image: url(img/bg-log.png);
+    background-size:cover ;
+    
+    background-repeat: no-repeat;
+}
+
+.head-log{
+    display: flex;
+}
+
+.menu-action{
+    display: block;               
+    font-size: 18px;
+    text-decoration: none; 
+    background-color: #0a3fff;   
+    color: white;             
+    border-radius: 30px 0 0 30px;
+    font-weight: bold;
+    padding: 5%;
+}
+
+.menu-option{
+    display: block;               
+    font-size: 18px;
+    text-decoration: none;        
+    color: #333;                  
+    font-weight: bold;            
+                
+    padding: 5%;
+}
+
+.home{
+    padding-top: 10px;
+    padding-left: 18%; 
+    flex-direction: column;
+    flex: 85%;
+}
+
+.headdd{
+  font-size: 30px;
+  font-weight: bold;
+  color: #333;
+
+}
+
+.card {
+  padding: 40px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.circle-arrow {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 18px solid #1ea0d8; 
+  border-right-color: transparent; 
+  position: relative;
+  margin: 0 auto 20px;
+  box-sizing: border-box;
+  
+}
+
+/* หัวลูกศร */
+.circle-arrow::after {
+  content: "";
+  position: absolute;
+  top: 10%;       
+  right: -35px;   
+  transform: translateY(-50%) rotate(45deg); 
+  border: 22px solid transparent;
+  border-left: 42px solid #1ea0d8; 
+  transform: rotate(45deg);
+}
+
+.circle-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.card h2 {
+  margin: 0 0 15px;
+  font-size: 30px;
+  color: #333;
+}
+
+.card p {
+  margin: 0;
+  font-size: 20px;
+  color: #666;
+}
+
+.btn {
+  padding: 8px 20px;
+  border: 1px solid #999;
+  background: #f9f9f9;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  background: #eaeaea;
+}
+
+
+.table-officer {
+  justify-content: center;   
+  align-items: center;       
+  text-align: center;   
+}
+
+/* ตาราง */
+.grid-table {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 3fr 1fr 2fr 1fr 1fr;
+  gap: 2px;
+  width: 100%;
+  margin: auto auto auto auto;
+}
+
+.grid-table-col6fr {
+  grid-template-columns: 1fr 2fr 2fr 2fr 2fr 2fr;
+  display: grid;
+  gap: 2px;
+  width: 100%;
+  margin: auto auto auto auto;
+}
+
+.cell {
+  padding: 10px;
+  border: 1px solid #1ea0d8;
+  display: flex;           
+  justify-content: center;   
+  align-items: center;       
+  text-align: center;       
+}
+
+.sp {
+  padding: 10px;
+  border: 1px solid #1ea0d8;
+  display: flex;           
+  justify-content: center;   
+  align-items: center;       
+  text-align: center;       
+  cursor: pointer;  
+  transition: background 0.2s;
+}
+
+.sp:hover {
+  background-color: #d0ebff;
+}
+
+.header {
+  background-color: #1ea0d8;
+  color: #fff;
+  font-weight: bold;
+}
+
+.modal {
+  display: none; 
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  padding: 30px;        
+  border-radius: 20px; 
+  max-width: 900px;     
+  width: 90%;            
+  max-height: 90vh;      
+  overflow-y: auto;    
+  background: #fff;
+  font-size: 30px;
+  position: relative; 
+}
+
+.close {
+  position: absolute;
+  top: 1px;
+  right: 20px;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.cell-pop {
+  font-weight: bold;
+}
+
+.modal-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.accept-btn {
+  background: green;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.cancel-btn {
+  background: red;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.accept-btn:hover {
+  background: darkgreen;
+}
+
+.cancel-btn:hover {
+  background: darkred;
+}
+
+.maincon{
+  display: flex;             
+  flex-direction: column;       
+  padding: 20px 0;
+  margin: auto 40px auto 40px;
+}
+
+/* search */
+.search-container {
+  display: flex;
+  gap: 5px;
+  background-color: white;
+  padding: 5px 5px;
+  border-radius: 30px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  margin-bottom: 20px;
+  width: fit-content;
+}
+
+.search-container input {
+  border: none;
+  outline: none;
+  padding: 10px 15px;
+  border-radius: 20px;
+  width: 250px;
+  font-size: 16px;
+}
+
+.search-container input::placeholder {
+  color: #aaa;
+}
+
+.search-container button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background: linear-gradient(45deg, #1ea0d8, #0d7bbd);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.search-container button:hover {
+  background: linear-gradient(45deg, #0d7bbd, #1ea0d8);
+  transform: scale(1.05);         
+}
+
+.selectcss {
+  border-radius: 20px;
+  background: #fff;
+  font-size: 20px;
+  position: relative; 
+}
+
+.btnn{
+  background: rgb(118, 25, 25);
+  color: white;
+}
+
+.btnn:hover{
+  background: rgb(202, 69, 69);
+}
+
+.calendar {
+      width: 600px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      padding: 20px;
+    }
+    .calendar header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+    header button {
+      padding: 5px 12px;
+      border: none;
+      border-radius: 6px;
+      background: #1ea0d8;
+      color: #fff;
+      cursor: pointer;
+    }
+    header h2 {
+      margin: 0;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th {
+      color: #555;
+      padding: 10px;
+    }
+    td {
+      width: 14.28%;
+      height: 80px;
+      text-align: left;
+      vertical-align: top;
+      border: 1px solid #ddd;
+      padding: 5px;
+      position: relative;
+      cursor: pointer;
+    }
+    td:hover {
+      background: #f0f8ff;
+    }
+    .note {
+      font-size: 12px;
+      color: #333;
+      margin-top: 4px;
+      background: #f9e79f;
+      padding: 2px 4px;
+      border-radius: 4px;
+      display: inline-block;
+    }
+    /* popup box */
+    .popup {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.5);
+      justify-content: center;
+      align-items: center;
+    }
+    .popup-content {
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      width: 300px;
+    }
+    .popup-content textarea {
+      width: 100%;
+      height: 80px;
+      margin-bottom: 10px;
+    }
+    .popup-content button {
+      margin-right: 5px;
+    }
+
+
+
+    /* Beam */
+
+

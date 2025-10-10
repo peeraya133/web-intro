@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="..\style.css">
+  <link rel="icon" type="image" href="../img/logoIT.png">
+ <title>ระบบการจัดการโครงงาน - รายงานความคืบหน้า</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&family=Athiti:wght@200;300;400;500;600;700&family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <style>
+    .search-wrapper {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      z-index: 1000;
+    }
+
+    .search-wrapper .form {
+      --width-of-input: 250px;
+      --height-of-input: 45px;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <div class="menu">
+        <a href="home_user.html"><img src="/../img/head.png" width="100%" alt=""></a>
+            <a href="home_kru.html" class="menu-option ">หน้าหลัก</a>
+            <a href="Progress_Report_kru.html" class="menu-option menu-action">รายงานความคืบหน้า</a>
+            <a href="Notification.html" class="menu-option">แจ้งเตือนถึงคุณ</a>
+            <a href="Student_Project_Management.html" class="menu-option">จัดการโครงงานของนักศึกษา</a>
+            <a href="User_info.html" class="menu-option">ข้อมูลผู้ใช้งาน</a>
+            <a href="javascript:void(0)" 
+              style="color: rgb(182, 2, 2);" 
+              class="menu-option" 
+              onclick="logoutConfirm()">
+              ออกจากระบบ &nbsp;<i class="fa-solid fa-right-from-bracket"></i>
+            </a>
+    </div>
+
+    <div class="main-student" style="margin-left: 18%; flex-direction: column;">
+        <a href="Progress_Report_kru.html" style="text-decoration: none"><h2 style="flex: 100%; color: black;;">< ย้อนกลับ</h2></a>
+                <table>
+            <tr>
+                <td style="width: 18%;">โครงงาน : </td>
+                <td style="width: 82%;">680015 ระบบ...</td>
+            </tr>
+            <tr>
+                <td>ผู้จัดทำ : </td>
+                <td>6806022510408 น.ส.พีรยา จันแปลง</td>
+            </tr>
+            <tr>
+                <td>ทก01 : </td>
+                <td><a href="../files/IE8-WindowsXP-x86-ENU.exe">ทก01.pdf</a></td>
+            </tr>
+            <tr>
+                <td>รายงานครั้งที่ : </td>
+                <td style="font-weight: 500;">2</td>
+            </tr>
+            <tr>
+                <td>ปัจจุบันความคืบหน้าทั้งหมด : </td>
+                <td style="font-weight: 500;">10%</td>
+            </tr>
+            <tr>
+                <td>ผลงาน : </td>
+                <td><a href="../files/IE8-WindowsXP-x86-ENU.exe">ระบบ....pdf</a></td>
+            </tr>
+            <tr>
+                <td>ความคืบหน้าครั้งนี้ : </td>
+                <td> <input type="number" class="ip-text" name="" id="">%</td>
+            </tr>
+            <tr><td></td></tr>
+            <tr>
+                <td style="vertical-align: top;">ความคิดเห็น : </td>
+                <td > <textarea name="" class="ip-text" id=""></textarea> </td>
+            </tr>
+            <tr>
+                <td><button  type="button" onclick="submitData()" class="btn btn-g">เสร็จสิ้น</button>&nbsp;
+                    <button  type="reset" class="btn btn-r">ล้างข้อมูล</button></td>
+                
+            </tr>
+        </table>
+
+        
+
+     
+
+
+        
+    </div>
+        <script>
+                function submitData() {
+            Swal.fire({
+                title: "ส่งข้อมูลเรียบร้อย!",
+                icon: "success",
+                confirmButtonText: "เรียบร้อย",   // เปลี่ยนข้อความปุ่ม
+                confirmButtonColor: "#4ba54b" 
+            });
+
+ 
+        }
+
+              function logoutConfirm() {
+            Swal.fire({
+                title: "จะออกจากระบบหรือไม่?",
+                
+                icon: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#4ba54b",
+                cancelButtonColor: "#d04a4a",
+                confirmButtonText: "ใช่, ออกจากระบบ",
+                cancelButtonText: "ยกเลิก"
+            }).then((result) => {
+                if (result.isConfirmed) {
+                // ไปยังหน้า login.html
+                window.location.href = "/../login.html";
+                }
+            });
+            }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="..\popup.js"></script>
+</body>
+</html>

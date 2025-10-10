@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image" href="img/logoIT.png">
+    <title>ระบบการจัดการโครงงาน - หน้าแรก</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&family=Athiti:wght@200;300;400;500;600;700&family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main-student">
+        <div class="menu">
+            <a href="home_user.html"><img src="img/head.png" width="100%" alt=""></a>
+            <a href="" class="menu-option menu-action">หน้าหลัก</a>
+            <a href="login.html" style="color: rgb(1, 81, 37);"  class="menu-option ">เข้าสู่ระบบ &nbsp;<i class="fa-regular fa-circle-user"></i></a>
+            
+            
+           
+        </div>
+        <div class="home" >
+            
+            <div class="home-newuser" style="width: auto;height: auto;left: 25%;top: 5%;">
+                <center><h2 style="font-weight: 500;color: rgb(1, 1, 59);">ระบบการจัดการโครงงานสำหรับนักศึกษาภาควิชาเทคโนโลยีสารสนเทศ</h2></center>
+                
+                <center>
+                <img src="img/index.png" width="50%" alt="">
+                <h2>ลงทะเบียนเข้าใช้งาน <a href="register.html"><button class="btn btn-sky">ไปลงทะเบียน</button></a></h2>
+                </center>
+                
+            </div>
+        </div>
+    </div>
+
+    <script>
+              function logoutConfirm() {
+            Swal.fire({
+                title: "จะออกจากระบบหรือไม่?",
+                
+                icon: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#4ba54b",
+                cancelButtonColor: "#d04a4a",
+                confirmButtonText: "ใช่, ออกจากระบบ",
+                cancelButtonText: "ยกเลิก"
+            }).then((result) => {
+                if (result.isConfirmed) {
+                // ไปยังหน้า login.html
+                window.location.href = "login.html";
+                }
+            });
+            }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+</html>

@@ -1,0 +1,1087 @@
+*{
+    font-family: "Athiti", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.main-log{
+    width: 550px;
+    height: 380px;
+    border: 1px solid #989797;
+    border-radius: 12px;
+    text-align: left;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    padding: 2%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 8px 32px rgba(0, 24, 64, 0.438);
+}
+.main-reg{
+  display: flex;
+  
+    flex: 100%;
+    width: 1400px;
+    height: auto;
+    border: 1px solid #989797;
+    border-radius: 12px;
+    text-align: left;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    padding: 2%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 8px 32px rgba(0, 24, 64, 0.438);
+}
+body{
+
+    margin: 0%;
+}
+.bg-log {
+background: linear-gradient(135deg, #b4fffa, #8bc3ff, #ff84d6, #fc5c9f, #5cf7ff, #5c54ff);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.head-log{
+    display: flex;
+}
+.form-log{
+    
+    margin-top: 4%;
+    margin-left: 25%;
+    font-size: 120%;
+}
+.form-reg{
+  display: flex;
+  
+  flex-direction: column;
+    margin-top: 4%;
+    margin-left: 25%;
+    font-size: 120%;
+}
+.btn{
+    display: inline-block;
+    padding: 5px 20px;
+    
+    border: none;
+    font-size: 16px;
+    font-family: "Athiti", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    cursor: pointer;
+    backdrop-filter: blur(5px);
+    
+    border-radius: 5px;
+}
+.btn-g{
+    background-color: rgb(96, 186, 96);
+    color: white;
+}
+.btn-r{
+    background-color: rgb(255, 56, 96);
+    color: white;
+}
+.btn-y{
+    background-color: rgb(254, 242, 70);
+    color: black;
+}
+.btn-sky{
+    background-color: rgb(41, 102, 255);
+    color: white;
+}
+.btn-g:hover{
+    background: rgba(25, 187, 39, 0.559);
+    transform: scale(1.05);
+    color: black;
+}
+.btn-r:hover{
+    background: rgba(187, 25, 25, 0.559);
+    transform: scale(1.05);
+    color: black;
+}
+.btn-y:hover{
+    background: rgba(255, 215, 54, 0.559);
+    transform: scale(1.05);
+    color: black;
+}
+.btn-sky:hover{
+    background: rgb(157, 183, 248);
+    transform: scale(1.05);
+    color: black;
+}
+.ip-text{
+    width: 200px;
+    padding: 4px 3px;
+    border: 1px solid #989797;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.3s ease;
+    
+}
+.ip-text:focus{
+    border-color: rgb(29, 0, 133);
+    box-shadow: 0 0 8px rgba(0, 170, 255, 0.6);
+}
+.main-student{
+    display: flex;
+}
+.menu{
+    background-color: rgb(255, 255, 255);
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+    flex: 15%;
+    position: fixed;
+    height: 100%;
+    width: 15%;
+    top: 0;
+    left: 0;
+    box-shadow: 0 8px 5px rgba(0, 24, 64, 0.438);
+}
+.menu-project{
+  box-shadow: 0 2px 2px rgba(0, 24, 64, 0.438);
+  border: 1px solid #cbcaca;
+  border-radius: 20px;
+  margin-left: 15%;
+  width: 60%;
+  height: 45px;
+  padding: 10px;
+  padding-left: 30px;
+  padding-top: 15px;
+  padding-bottom: 0px;
+    /* background-color: rgb(255, 255, 255);
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+    flex: 15%;
+    position: fixed;
+    height: 100%;
+    width: 15%;
+    top: 0;
+    left: 0;
+    box-shadow: 0 8px 5px rgba(0, 24, 64, 0.438); */
+}
+.menu-project a{
+  margin-left: 40px;
+  text-decoration: none;
+  font-size: 20px;
+}
+.project-action{
+  box-shadow: 0 4px 6px rgba(0, 24, 64, 0.438);
+  background-color: #0a3fff;   
+  color: white;             
+  border-radius: 15px;
+  padding: 9px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 20px;
+}
+.main-project{
+  display: flex;
+  margin-top: 4%;
+  
+}
+.home{
+    padding-top: 10px;
+    padding-left: 18%; 
+    flex-direction: column;
+    flex: 85%;
+}
+.home-newuser{
+    width: 750px;
+    height: 380px;
+    border: 1px solid #989797;
+    border-radius: 12px;
+    text-align: left;
+    position: absolute;
+    top: 15%;
+    left: 32%;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 8px 32px rgba(0, 24, 64, 0.438);
+}
+.home-user{
+    width: 750px;
+    height: 490px;
+    border: 1px solid #696fb7;
+    border-radius: 12px;
+    text-align: left;
+    position: absolute;
+    top: 15%;
+    left: 30%;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 8px 32px rgba(100, 154, 247, 0.438);
+}
+.main-noti{
+  display: flex;
+  flex-direction: column;
+  
+
+}
+.noti {
+    width: 80%;
+    height: auto; 
+    border: 1px solid #696fb7;
+    border-radius: 12px;
+    text-align: left;
+    padding: 20px 50px;
+    margin-bottom: 15px; 
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 8px 32px rgba(100, 154, 247, 0.438);
+    display: flex;
+    flex-direction: column;
+    position: relative; /* ต้องมี เพื่อให้ pseudo-element อ้างอิงตำแหน่งนี้ */
+}
+
+.noti::before {
+    content: "";
+    position: absolute;
+    top: 10px;   /* ระยะจากบน */
+    left: 10px;  /* ระยะจากซ้าย */
+    width: 12px;  /* ขนาดของจุด */
+    height: 12px;
+    background-color: red;
+    border-radius: 50%; /* ทำเป็นวงกลม */
+}
+.notied {
+    width: 80%;
+    height: auto; /* ปรับตามความสูงเนื้อหา */
+    border: 1px solid #696fb7;
+    border-radius: 12px;
+    text-align: left;
+    padding: 20px 50px;
+    margin-bottom: 15px; /* เว้นระยะระหว่าง notification */
+    background-color: rgb(220, 220, 220);
+    
+    flex: 100%;
+}
+.menu-option{
+    display: block;               
+    font-size: 18px;
+    text-decoration: none;        
+    color: #333;                  
+    font-weight: bold;            
+                
+    padding: 5%;
+}
+.menu-action{
+    background-color: #0a3fff;   
+    color: white;             
+    border-radius: 30px 0 0 30px;
+    
+}
+table h2{
+    margin: 0%;
+}
+table td{
+    font-size: 20px;
+}
+  select {
+    width: 300px;               /* ความกว้าง */
+    padding: 10px 15px;         /* ระยะห่างภายใน */
+    border-radius: 8px;         /* มุมมน */
+    border: 1px solid #ccc;     /* ขอบ */
+    background-color: #f9f9f9;  /* สีพื้นหลัง */
+    font-size: 16px;            /* ขนาดตัวอักษร */
+    appearance: none;           /* เอา arrow ของ browser ออก (บาง browser) */
+    -webkit-appearance: none;   /* สำหรับ Safari/Chrome */
+    -moz-appearance: none;      /* สำหรับ Firefox */
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  /* เปลี่ยนสีเมื่อ focus */
+  select:focus {
+    border-color: rgb(29, 0, 133);
+    box-shadow: 0 0 8px rgba(0, 170, 255, 0.6);
+    outline: none;
+  }
+
+  /* container สำหรับ arrow */
+  .select-wrapper {
+    position: relative;
+    display: inline-block;
+  }
+  .select-wrapper::after {
+    content: "▼";
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #555;
+    font-size: 12px;
+  }
+  textarea {
+    width: 100%;                 /* ความกว้างเต็มพื้นที่ container */
+    min-height: 120px;           /* ความสูงขั้นต่ำ */
+    padding: 10px 15px;          /* ระยะห่างด้านใน */
+    font-size: 16px;             /* ขนาดตัวอักษร */
+    border: 1px solid #ccc;      /* ขอบปกติ */
+    border-radius: 8px;          /* มุมมน */
+    resize: vertical;            /* ปรับขนาดได้เฉพาะแนวตั้ง */
+    background-color: #f9f9f9;   /* สีพื้นหลัง */
+    transition: border-color 0.3s, box-shadow 0.3s; /* ลื่นเวลามี focus */
+    font-family: Arial, sans-serif;
+  }
+
+  textarea:focus {
+    border-color: rgb(29, 0, 133);
+    box-shadow: 0 0 8px rgba(0, 170, 255, 0.6);
+    outline: none;               /* เอา outline ของ browser ออก */
+  }
+
+  /* placeholder สีอ่อน */
+  textarea::placeholder {
+    color: #999;
+  }
+
+
+.progress-circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: #333;
+  background: conic-gradient(
+    #8de65a calc(var(--percent) * 1%), /* สีเขียวตามเปอร์เซ็นต์ */
+    #ddd 0
+  );
+}
+.progress-circle span {
+  position: absolute;
+}
+.wrapper {
+  position: relative;
+  display: inline-block;
+}
+.wrapper::before {
+  content: "";
+  position: absolute;
+  top: 19px;
+  left: 19px;
+  right: 19px;
+  bottom: 19px;
+  background: #fff;
+  border-radius: 50%;
+}
+.row {
+  display: flex;
+  align-items: center;  /* จัดให้อยู่กึ่งกลางแนวตั้ง */
+  gap: 10px;            /* ระยะห่างระหว่าง h2 กับ p */
+  margin-bottom: 8px;   /* เว้นบรรทัดระหว่าง row */
+}
+
+.row h2, .row h3 {
+  margin: 0;  /* ตัด margin ค่าเริ่มต้นออก */
+}
+
+
+.file-upload input[type="file"] {
+  display: none;
+}
+
+/* ปรับปุ่ม label ให้สวย */
+.file-upload label {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #0033ff;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s;
+  font-size: 14px;
+}
+
+.file-upload label:hover {
+  background-color: #000146;
+}
+
+.styled-table {
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 16px;
+  font-family: sans-serif;
+  min-width: 500px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.styled-table thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+}
+
+.styled-table tbody tr {
+  border-bottom: 1px solid #ddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3; /* สลับสี */
+}
+
+.styled-table tbody tr:hover {
+  background-color: #f1f1f1; /* hover highlight */
+}
+
+.styled-table tbody tr:last-of-type {
+  border-bottom: 2px solid #3f5fee;
+}
+
+.pagination {
+  padding-left: 30%; /* จัดปุ่มไว้กลาง */
+  margin: 50px 0;
+}
+
+.pagination button {
+  margin: 0 3px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: #0055ff;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.pagination button:hover {
+  background-color: #00137f;
+}
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1000; 
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.5); 
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto; 
+  padding: 20px;
+  border-radius: 10px;
+  width: 450px;
+  text-align: center;
+}
+
+.close {
+  float: right;
+  font-size: 24px;
+  cursor: pointer;
+  color: rgb(155, 2, 2);
+}
+.notification {
+  display: none; /* ซ่อนเริ่มต้น */
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  font-weight: bold;
+  z-index: 2000;
+  opacity: 0;
+  transition: opacity 0.5s, transform 0.5s;
+}
+.notification.show {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+
+
+
+
+/* Beam */
+
+
+/* ปุ่ม search */
+.form button {
+  border: none;
+  background: none;
+  color: #555; /* สีเทาเข้มสำหรับ icon */
+}
+
+/* container ของ input */
+.form {
+  --timing: 0.3s;
+  --width-of-input: 200px;
+  --height-of-input: 40px;
+  --border-height: 2px;
+  --border-color: #2f2ee9;
+  --border-radius: 30px;
+  --after-border-radius: 1px;
+  position: relative;
+  width: var(--width-of-input);
+  height: var(--height-of-input);
+  display: flex;
+  align-items: center;
+  padding-inline: 0.8em;
+  border-radius: var(--border-radius);
+  transition: border-radius 0.5s ease;
+  background: #e0e0e0; /* เปลี่ยนเป็นสีเทาอ่อน */
+}
+
+/* styling ของ input */
+.input {
+  font-size: 0.9rem;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  padding-inline: 0.5em;
+  padding-block: 0.7em;
+  border: none;
+  color: #333; /* สีข้อความที่พิมพ์ */
+}
+
+/* placeholder สีเทา */
+.input::placeholder {
+  color: #777;
+}
+
+/* animated border */
+.form:before {
+  content: "";
+  position: absolute;
+  background: var(--border-color);
+  transform: scaleX(0);
+  transform-origin: center;
+  width: 100%;
+  height: var(--border-height);
+  left: 0;
+  bottom: 0;
+  border-radius: 1px;
+  transition: transform var(--timing) ease;
+}
+
+.form:focus-within {
+  border-radius: var(--after-border-radius);
+}
+
+input:focus {
+  outline: none;
+}
+
+.form:focus-within:before {
+  transform: scale(1);
+}
+
+/* close button */
+.reset {
+  border: none;
+  background: none;
+  opacity: 0;
+  visibility: hidden;
+}
+
+input:not(:placeholder-shown) ~ .reset {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* sizing svg icons */
+.form svg {
+  width: 17px;
+  margin-top: 3px;
+}
+.sec{
+  display: flex;
+  height: 200px; /* สูงขึ้นเพื่อให้พื้นที่พอสำหรับ icon ใหญ่ */
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background: transparent; /* ไม่มีพื้นหลัง */
+  position: relative;
+}
+
+.sec .dots span{
+  position: absolute;
+  height: 20px; /* ขนาดจุดใหญ่ขึ้น */
+  width: 20px;  /* ขนาดจุดใหญ่ขึ้น */
+  background: #ff3d00; /* สีจุด */
+  border-radius: 50%;
+  transform: rotate(calc(var(--i) * (360deg / 15))) translateY(70px); /* ระยะหมุนไกลขึ้น */
+  animation: animate 1.5s linear infinite;
+  animation-delay: calc(var(--i) * 0.1s);
+  opacity: 0;
+}
+
+@keyframes animate {
+ 0% { opacity: 1; }
+ 100% { opacity: 0; }
+}
+
+/* Desktop */
+
+
+
+
+
+
+
+
+
+
+
+/* มือถือเล็ก (<=480px) */
+@media (max-width: 480px) {
+  .main-reg, .home-user, .home-newuser {
+    width: 95%;     /* เต็มจอเกือบสุด */
+    left: 50%;      /* กึ่งกลาง */
+    top: 10%;       
+    transform: translateX(-50%);
+    height: auto;   /* ให้สูงตามเนื้อหา */
+    background: white;
+  }
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.form-reg img[src="img/reg.jpg"] {
+    display: none;
+}
+.form-reg img[src="img/head.png"] {
+  width: 100%;
+}
+  /* ปรับข้อความให้ตรงกลาง */
+  .form-reg:last-of-type {
+    all: unset;     /* ลบทุกสไตล์เดิมของ div นี้ */
+    display: none;  /* หรือซ่อนเลยก็ได้ */
+  }
+.divider {
+    display: none;
+}
+.log{
+  margin-top: 25%;
+}
+.form-reg.left {
+    width: 100vW !important;    /* เต็มความกว้าง */
+    margin-left: 0 !important; /* เอา margin ซ้ายออก */
+}
+.form-log{
+  padding: 0%;
+  margin-top: 5%;
+  margin-left: 12%;
+}
+
+/* main-log เต็มหน้าจอมือถือ portrait */
+.main-log {
+    width: 100vw;         /* เต็มความกว้าง */
+    height: 100vh;        /* เต็มความสูง */
+    position: fixed;      /* ไม่เลื่อน */
+    top: 0;
+    left: 0;
+    background: linear-gradient(to top right, #b1c1e2, #dbeeff, #ffe8f8);
+    border-radius: 0;
+    border: 0;
+    padding: 0;
+    overflow: hidden;      /* ป้องกันเลื่อนในกรณีมี content มาก */
+}
+/* เบื้องต้นซ่อนเมนูบนมือถือ */
+
+  /* เมนูแสดงเต็มจอมือถือ */
+.menu {
+    display: flex;                  
+    flex-direction: row;            
+    align-items: center;            
+    justify-content: space-between; /* img ซ้าย nav ขวา */
+    width: auto;
+    height: auto;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    position: fixed;   /* ลอยอยู่บนสุด */
+    z-index: 1000;     /* ให้ทับทุก div อื่น */
+}
+  .menu img[src="img/head.png"]{
+    width: 100%;      /* ปรับขนาดตามต้องการ */
+    height: auto;
+  }
+/* ☰ */
+
+
+/* container ปุ่ม menu */
+/* container ปุ่ม menu */
+.nav-links {
+  position: relative;
+  display: inline-block;
+}
+
+/* ปุ่ม pseudo-element แค่โชว์ */
+.nav-links::before {
+  content: "☰";
+  display: inline-block;
+  padding: 5px 10px;
+  background: #0a3fff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  pointer-events: none; /* ป้องกัน ::before block click */
+}
+
+/* ซ่อน menu-option เริ่มต้น */
+.nav-links > .menu-option {
+  all: unset;
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 180px;
+  padding: 10px;
+  font-family: "Athiti", sans-serif;
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+/* แสดงทั้งหมดเมื่อ hover container (.nav-links) */
+.nav-links:hover > .menu-option,
+.nav-links:focus-within > .menu-option {
+  display: block;
+}
+
+/* จัด dropdown เป็นแนวตั้ง ไม่ซ้อนกัน */
+.nav-links > .menu-option:nth-child(1) { top: 100%; }
+.nav-links > .menu-option:nth-child(2) { top: calc(100% + 42px); }
+.nav-links > .menu-option:nth-child(3) { top: calc(100% + 84px); }
+.nav-links > .menu-option:nth-child(4) { top: calc(100% + 126px); }
+.nav-links > .menu-option:nth-child(5) { top: calc(100% + 168px); }
+.nav-links > .menu-option:nth-child(6) { top: calc(100% + 210px); }
+.nav-links > .menu-option:nth-child(7) { top: calc(100% + 252px); }
+
+/* hover effect */
+.nav-links > .menu-option:hover {
+  background-color: #0a3fff;
+  color: white;
+}
+
+
+
+.home{
+    width: 95%;     /* เต็มจอเกือบสุด */
+    left: 50%;      /* กึ่งกลาง */
+    top: 10%;       
+    transform: translateX(-50%);
+    height: auto;   /* ให้สูงตามเนื้อหา */
+    background: white;
+}
+
+
+.home table{
+  margin-top: 35%;
+  margin-left: 45%;
+  padding: 0%;
+  width: 50%;
+  font-size: 10px;
+  
+}
+.home table td{
+ 
+  font-size: 10px;
+  
+}
+.home input {
+  all: unset;             
+  box-sizing: border-box; 
+  width: 50px !important; /* บังคับ override inline style */
+  font-size: 10px;        
+  padding: 2px;           
+  margin: 0;              
+}
+.home select {
+    all: unset;               /* ลบสไตล์เดิม */
+    width: 120px !important;  /* กำหนดความกว้างเล็กลง */
+    font-size: 12px;          /* ขนาดตัวอักษร */
+    padding: 2px 4px;         /* เว้นขอบเล็กน้อย */
+    box-sizing: border-box;   /* รวม padding และ border ใน width */
+    border: 1px solid #ccc;   /* เพิ่ม border เล็กน้อยให้เห็น */
+    border-radius: 4px;       /* ขอบมนเล็กน้อย */
+    background-color: white;  /* สีพื้นหลัง */
+}
+
+
+
+
+
+  /* .menu .menu-option{
+    display:none;
+  } */
+
+  /* Content ปรับไม่ทับเมนู */
+  .home-newuser {
+    width: 90vw;         /* เต็มความกว้าง */
+    height: 60vh;        /* เต็มความสูง */
+    position: fixed;      /* ไม่เลื่อน */
+    top: 100;
+    left: 10;
+    background: none;
+    border-radius: 5;
+    border: 0;
+    padding: 0;
+    overflow: hidden;      /* ป้องกันเลื่อนในกรณีมี content มาก */
+    margin-top: 20%;
+  }
+  .home-user {
+    width: 90vw;         /* เต็มความกว้าง */
+    height: 70vh;        /* เต็มความสูง */
+    position: fixed;      /* ไม่เลื่อน */
+    top: 100;
+    left: 10;
+    background: none;
+    border-radius: 5;
+    border: 0;
+    padding: 2%;
+    overflow: hidden;      /* ป้องกันเลื่อนในกรณีมี content มาก */
+    margin-top: 30%;
+    margin-left: 45%;
+  }
+  .home-user h2{
+    font-size: 16px;
+  }
+  .home-user h1{
+    font-size: 18px;
+  }
+  .main-student{
+    display: flex;
+    flex-direction: column;
+  }
+  .main-project {
+    width: 80vw;         /* เต็มความกว้าง */
+    height: 70vh;        /* เต็มความสูง */
+    position: fixed;      /* ไม่เลื่อน */
+    top: 100;
+    left: 10;
+    background: none;
+    border-radius: 5;
+    border: 0;
+    padding: 2%;
+    overflow: hidden;      /* ป้องกันเลื่อนในกรณีมี content มาก */
+    margin-top: 5%;
+    margin-left: 42%;
+  }
+  .none-pro{
+    padding: 0%;
+    margin-left: 30% !important; 
+  }
+  .none-pro button{
+    font-size: 10px;
+    
+  }
+  .none-pro table{
+    all: unset !important;       
+    display: block !important;   /* ให้เต็มบรรทัด */
+    width: 100% !important;      /* เต็มจอมือถือ */
+         /* เต็มจอมือถือ */
+  }
+  .main-project h2{
+    font-size: 16px;
+    
+  }
+  .main-project h3{
+    
+    font-size: 14px;
+  }
+.styled-table{
+  width: 50% !important;
+  padding: 0% !important;
+  margin-left: 30% !important;
+}
+.styled-table td{
+  width: 5% !important;
+  padding: 0% !important;
+  margin: 0% !important;
+}
+
+.menu-project {
+  margin-top: 30%;             /* ระยะห่างจากข้างบน */
+  margin-left: 43%;            /* กึ่งกลาง */
+  margin-right: auto;           /* กึ่งกลาง */
+  box-shadow: 0 2px 2px rgba(0, 24, 64, 0.438);
+  border: 1px solid #cbcaca;
+  border-radius: 20px;
+  width: 90%;                   /* กว้างเกือบเต็มจอ */
+  padding: 10px 15px;           /* ระยะด้านในกล่อง */
+  display: flex;                /* เรียงเมนูเป็นแถว */
+  justify-content: space-around;/* กระจายเมนูให้ห่างพอดี */
+  align-items: center;          /* ให้อยู่กึ่งกลางแนวตั้ง */
+  background: #fff;
+}
+
+.menu-project a {
+  all: unset !important;       
+  display: block !important;   /* ให้เต็มบรรทัด */
+  width: 100% !important;      /* เต็มจอมือถือ */
+  background: #f2f2f2 !important;
+  padding: 12px 16px !important;
+  border-radius: 8px !important;
+  font-family: "Athiti", sans-serif !important;
+  font-size: 12px !important;
+  color: #333 !important;
+  text-align: center !important;
+  cursor: pointer !important;
+  box-sizing: border-box !important;
+}
+.menu-project > .project-action {
+  display: inline-block;        /* ให้กลายเป็นปุ่ม */
+  min-width: 120px;             /* ความกว้างขั้นต่ำ */
+  text-align: center;           /* จัดข้อความกลาง */
+  font-family: "Athiti", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;        /* เอาขีดเส้นใต้ลิงก์ออก */
+  box-shadow: 0 4px 6px rgba(0, 24, 64, 0.3);
+  background-color: #0a3fff;
+  color: #fff;
+  border-radius: 15px;
+  padding: 9px 15px;
+  transition: all 0.2s ease;
+}
+
+.menu-project > .project-action:hover {
+  background-color: #0846cc;
+  box-shadow: 0 6px 8px rgba(0, 24, 64, 0.45);
+}
+
+/* hover effect */
+.menu-project a:hover {
+  background: #0a3fff !important;
+  color: #fff !important;
+}
+
+
+  /* ตารางและปุ่มปรับให้เล็กลง */
+  table {
+    width: 100%;
+  }
+
+  table td {
+    font-size: 14px;
+    padding: 5px;
+  }
+
+  /* ปรับตัวหนังสือใน table ให้เล็กลง */
+  table td {
+    font-size: 14px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Tablet (481px–768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .main-log, .main-reg, .home-user, .home-newuser {
+    width: 85%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  body.bg-log {
+    background: none !important;           /* ลบทุกค่า background */
+    background-image: none !important;     /* ลบรูปออกแน่นอน */
+    background-color: #ffffff !important;  /* ใส่สีพื้นหลังแทน (เลือกเองได้) */
+  }
+
+.log{
+  margin-top: 50%;
+}
+
+  .menu {
+    width: 25%; /* เมนูกว้างขึ้น */
+  }
+
+  .home {
+    padding-left: 27%;
+  }
+}
+
+
+
+
+
+
+
+
+
+/* สำหรับจอแท็บเล็ต (iPad, จอกลาง) */
+@media (min-width: 481px) and (max-width: 768px) {
+  body {
+    background-color: lightgreen;
+    font-size: 16px;
+  }
+}

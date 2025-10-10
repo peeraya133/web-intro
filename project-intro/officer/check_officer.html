@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="..\stylenus.css">
+    <link rel="icon" type="image" href="../img/logoIT.png">
+    <title>ระบบการจัดการโครงงาน - ตรวจสอบคำร้อง</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&family=Athiti:wght@200;300;400;500;600;700&family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="main-student">
+    <div class="menu">
+        <a href="../home_user.html"><img src="../img/head.png" width="100%" alt=""></a>
+        <a href="home_officer.html" class="menu-option ">หน้าหลัก</a>
+        <a href="check_officer.html" class="menu-action">ตรวจสอบคำขอ</a>
+        <a href="Manageproject_officer.html" class="menu-option">การจัดการโครงงานของนักศึกษา</a>
+        <a href="table_officer.html" class="menu-option">ตารางสอบ</a>
+        <a href="User information_officer.html" class="menu-option">ข้อมูลผู้ใช้งาน</a>
+        <a href="javascript:void(0)" 
+              style="color: rgb(182, 2, 2);" 
+              class="menu-option" 
+              onclick="logoutConfirm()">
+              ออกจากระบบ &nbsp;<i class="fa-solid fa-right-from-bracket"></i>
+            </a>
+    </div>
+  
+    <div class="content">
+      <div class="maincon">
+        <div class="headdd">คำขอทั้งหมด 2 รายการ</div>
+        <div class="grid-table">
+            <div class="cell header">รหัส</div>
+            <div class="cell header">วันที่</div>
+            <div class="cell header">รหัสนักศึกษา</div>
+            <div class="cell header">ชื่อโครงงาน</div>
+            <div class="cell header">เอกสารประกอบ</div>
+            <div class="cell header">อีเมล</div>
+            <div class="cell header">ประเภทคำร้อง</div>
+            <div class="cell header">ตรวจสอบ</div>
+
+            <div class="cell">010</div>
+            <div class="cell">12/12/68</div>
+            <div class="cell">6806022511030</div>
+            <div class="cell">ระบบจัดการหนังสือห้องสมุด</div>
+            <div class="cell"><a href="https://sites.google.com/itm.kmutnb.ac.th/it-project/%E0%B8%AB%E0%B8%99%E0%B8%B2%E0%B9%81%E0%B8%A3%E0%B8%81">ทก01.pdf</a></div>
+            <div class="cell">s6806022511030@email.kmutnb.ac.th</div>
+            <div class="cell">ยื่นสอบหัวข้อ </div>
+            <div class="cell sp open-modal" data-modal="popup1">รายละเอียด</div>
+
+            <div class="cell">011</div>
+            <div class="cell">16/12/68</div>
+            <div class="cell">6806022511134</div>
+            <div class="cell">ระบบจัดการค่าที่พัก</div>
+            <div class="cell"><a href="https://sites.google.com/itm.kmutnb.ac.th/it-project/%E0%B8%AB%E0%B8%99%E0%B8%B2%E0%B9%81%E0%B8%A3%E0%B8%81">ทก01.pdf</a></div>
+            <div class="cell">s6806022511134@email.kmutnb.ac.th</div>
+            <div class="cell">ยื่นสอบหัวข้อ </div>
+            <div class="cell sp open-modal" data-modal="popup2">รายละเอียด</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    
+  <div id="popup1" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div class="info-grid">
+        <div class="cell-pop">โครงงาน :</div>
+        <div class="value">ระบบจัดการหนังสือห้องสมุด</div>
+        <div class="cell-pop">ประเภทคำร้อง :</div>
+        <div class="value">ยื่นสอบหัวข้อ</div>
+        <div class="cell-pop">ผู้รับผิดชอบ :</div>
+        <div class="value">นายเดชาวัต เนติชัย</div>
+        <div class="cell-pop">อีเมล :</div>
+        <div class="value">s6806022511030@email.kmutnb.ac.th</div>
+        <div class="cell-pop">อาจารย์ที่ปรึกษา :</div>
+        <div class="value">รศ.ดร.อนิราช มิ่งขวัญ</div>
+        <div class="cell-pop">อาจารย์ที่ปรึกษาร่วม :</div>
+        <div class="value">ผศ.ดร.บีสุดา ดาวเรือง</div>
+      </div>
+      <div class="modal-buttons">
+        <button class="accept-btn" type="button" onclick="submitData()">รับคำร้อง</button>
+        <button class="cancel-btn" type="button" onclick="ccData()">ยกเลิกคำร้อง</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="popup2" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div class="info-grid">
+        <div class="cell-pop">โครงงาน :</div>
+        <div class="value">ระบบจัดการค่าที่พัก</div>
+        <div class="cell-pop">ประเภทคำร้อง :</div>
+        <div class="value">ยื่นสอบหัวข้อ</div>
+        <div class="cell-pop">ผู้รับผิดชอบ :</div>
+        <div class="value">นางสาวพีรยา จันแปลง</div>
+        <div class="cell-pop">อีเมล :</div>
+        <div class="value">s6806022511134@email.kmutnb.ac.th</div>
+        <div class="cell-pop">อาจารย์ที่ปรึกษา :</div>
+        <div class="value">รศ.ดร.อนิราช มิ่งขวัญ</div>
+        <div class="cell-pop">อาจารย์ที่ปรึกษาร่วม :</div>
+        <div class="value">ผศ.ดร.บีสุดา ดาวเรือง</div>
+      </div>
+      <div class="modal-buttons">
+        <button class="accept-btn" type="button" onclick="submitData()">รับคำร้อง</button>
+        <button class="cancel-btn" type="button" onclick="ccData()">ยกเลิกคำร้อง</button>
+      </div>
+    </div>
+  </div>
+    <script>
+      function submitData() {
+            Swal.fire({
+                title: "รับคำร้องเรียบร้อย!",
+                icon: "success",
+                confirmButtonText: "เรียบร้อย",   // เปลี่ยนข้อความปุ่ม
+                confirmButtonColor: "#4ba54b" 
+            });
+
+ 
+        }
+              function logoutConfirm() {
+            Swal.fire({
+                title: "จะออกจากระบบหรือไม่?",
+                
+                icon: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#4ba54b",
+                cancelButtonColor: "#d04a4a",
+                confirmButtonText: "ใช่, ออกจากระบบ",
+                cancelButtonText: "ยกเลิก"
+            }).then((result) => {
+                if (result.isConfirmed) {
+                // ไปยังหน้า login.html
+                window.location.href = "/../login.html";
+                }
+            });
+            }
+      function ccData() {
+            Swal.fire({
+                title: "ยกเลิกคำร้อง",
+                input: "textarea",
+                inputLabel: "กรอกเหตุผลที่ยกเลิกคำร้อง",
+                inputPlaceholder: "กรอกเหตุผลที่ยกเลิกคำร้องที่นี่",
+                inputAttributes: {
+                    
+                    autocapitalize: "off",
+                    autocorrect: "off"}
+                ,
+                confirmButtonText: "ยืนยัน",   // เปลี่ยนข้อความปุ่ม
+                confirmButtonColor: "#4ba54b" 
+            }).then((result) => {
+                if (result.isConfirmed) {
+                // ถ้ากดเรียบร้อย จะขึ้น popup อีกอัน
+                Swal.fire({
+                    title: "ยกเลิกคำร้องเรียบร้อย",
+                    
+                    icon: "success",
+                    confirmButtonText: "เรียบร้อย",   // เปลี่ยนข้อความปุ่ม
+                    confirmButtonColor: "#4ba54b" 
+                    });
+                    }
+            });
+            
+            
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="..\popup.js"></script>
+</body>
+</html>
